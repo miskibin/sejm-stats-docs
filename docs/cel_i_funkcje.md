@@ -61,12 +61,18 @@ W dłuższej perspektywie, planujemy wprowadzenie modelu freemium z opcjami subs
 ---
 
 ## 6. Kosztorys i Finansowanie
-**Koszty Uruchomienia:**
-- Domena: 50-100 PLN
-- AWS Services: [Szacunkowy Koszt]
-- MDBootstrap Pro: 500 PLN (opcjonalnie)
-- GitHub Copilot: 50 pln/miesiąc (opcjonalnie)
 
+::: danger 
+Dane w tabeli są szacunkowe i mogą ulec zmianie w zależności od rozwoju projektu.
+:::
+
+
+| Pozycja         | Koszt (PLN)              | Uzasadnienie                                                                                                        |
+| --------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| Domena          | 50 - 100                 | Opłata za roczną rejestrację nazwy domeny, podstawowa inwestycja umożliwiająca identyfikację projektu w internecie. |
+| AWS Services    | [Szacunkowy Koszt]       | Pokrycie kosztów hostingu, przechowywania danych i operacji obliczeniowych na potrzeby aplikacji.                   |
+| MDBootstrap Pro | 500 (opcjonalnie)        | Zakup licencji na premium komponenty UI, które ulepszają estetykę oraz UX aplikacji.                                |
+| GitHub Copilot  | 50/miesiąc (opcjonalnie) | Subskrypcja narzędzia wspierającego szybsze i efektywniejsze pisanie kodu.                                          |
 
 
 ---
