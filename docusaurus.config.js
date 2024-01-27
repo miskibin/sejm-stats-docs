@@ -13,7 +13,7 @@ const config = {
 
   // Update these with your own GitHub org/user and repo name if you plan to use GH Pages
   organizationName: "michalskibinski109", // Replace `ymichalskibinski109` with your GitHub username.
-  projectName: "sejm-stats", // Replace `sejm-stats` with your repository name.
+  projectName: "sejm-stats-docs", // Replace `sejm-stats` with your repository name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -29,8 +29,7 @@ const config = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl:
-            "https://github.com/ymichalskibinski109/sejm-stats/tree/main/docs/",
+          editUrl: "https://github.com/michalskibinski109/sejm-stats-docs",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
