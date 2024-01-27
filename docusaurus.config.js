@@ -14,7 +14,8 @@ const config = {
   // Update these with your own GitHub org/user and repo name if you plan to use GH Pages
   organizationName: "michalskibinski109", // Replace `ymichalskibinski109` with your GitHub username.
   projectName: "sejm-stats-docs", // Replace `sejm-stats` with your repository name.
-
+  deploymentBranch: "gh-pages",
+  trailingSlash: false,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
