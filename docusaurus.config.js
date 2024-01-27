@@ -9,7 +9,7 @@ const config = {
 
   // Set your production url here
   url: "https://sejm-stats.example.com",
-  baseUrl: "/sejm-stats/",
+  baseUrl: "/sejm-stats-docs/",
 
   // Update these with your own GitHub org/user and repo name if you plan to use GH Pages
   organizationName: "michalskibinski109", // Replace `ymichalskibinski109` with your GitHub username.
