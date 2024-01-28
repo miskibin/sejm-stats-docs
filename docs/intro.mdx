@@ -1,0 +1,134 @@
+---
+sidebar_position: 1
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+# Wstęp 🚀
+
+
+## Motywacja
+
+Każdy kto miał przyjemność korzystać z oficjalnej strony sejmowej, napewno doznał uczucia cofnięcia się w czasie do lat 90. Nieintuicyjny interfejs użytkownika, niespójna estetyka strony, brak możliwości wyszukiwania po słowach kluczowych to tylko niektóre z problemów, z którymi musieliśmy się zmierzyć.
+Dlatego zdecydowałem się zacząć projekt **`sejm-stats`**, który ma naprawić te problemy i rozszerzyć funkcjonalność o dodatkowe funkcjonalności.
+
+## Dlaczego to robię?
+
+---
+
+## Dlaczego to robię?
+
+---
+
+## Dlaczego to robię?
+
+Projekt **`sejm-stats`** to moja inicjatywa na rzecz lepszej dostępności informacji sejmowych dla wszystkich. Nie kieruję się motywami finansowymi, a przede wszystkim pragnieniem, by każdy wiedział co dzieje się w kraju. Nie jestem związany z żadną partią polityczną – moim celem jest obiektywne i wygodne dostarczanie informacji, aby ułatwić obywatelom zrozumienie procesów decyzyjnych w naszym kraju. Jednak w miarę rozwoju projektu zdałem sobie sprawę, że aby móc utrzymać projekt w dalszym ciągu, muszę znaleźć sposób na jego finansowanie. 
+
+
+
+---
+
+## Przewaga nad oficjalną stroną sejmową
+
+Poza tym, że strona zawiera wszystkie dane dostępne na oficjalnej stronie sejmowej, dodatkowo będzie oferawać:
+
+ 
+- Inteligentne streszczenia uchwał, ustaw, projektów ustaw itp. z wykorzystaniem modeli sztucznej inteligencji (NLP). 📝
+- Zaawansowane możliwości wyszukiwania danych z użyciem AI, elasticSearch i wektorowej bazy danych
+- Wizualizacje danych zintegrowane z aplikacją 📊
+- Możliwość zasubskrybowania się na konkretny temat i otrzymywania powiadomień o nowych projektach ustaw, uchwałach itp. 📬
+- Analizę danych sejmowych z wykorzystaniem uczenia maszynowego, aby wykrywać anomalie i nieprawidłowości w działaniach posłów 🤖
+
+- Możliwość eksportu danych do plików CSV, JSON, XML  w celu dalszej analizy 📁
+- Intuicyjny interfejs użytkownika oferujący motyw jasny i ciemny ☀️
+
+---
+
+## Zestawenie interfejsów
+
+:::important Uwaga
+
+Widoczne poniżej zrzuty ekranu pochodzą z POC (dowodu koncepcji) projektu. Finalna wersja może się różnić.
+
+:::
+
+<Tabs
+    defaultValue="light"
+    values={[
+        {label: 'oficjalna strona sejmu', value: 'gov'},
+        {label: 'sejm-stats motyw jasny', value: 'light'},
+        {label: 'sejm-stats motyw ciemny', value: 'dark'},
+    ]}>
+
+<TabItem value="gov">
+
+![sejm_tytulowa](img/sejm_tytulowa.png)    
+
+</TabItem>
+
+<TabItem value="light">
+
+![Alt text](img/light_mode.png)
+
+</TabItem>
+
+<TabItem value="dark">
+
+![Alt text](img/dark_mode.png)
+
+</TabItem>
+
+</Tabs>
+
+### Lista aktów prawnych
+
+<Tabs
+    defaultValue="procesy_sejm"
+    values={[
+        {label: 'sejm.gov.pl', value: 'procesy_sejm'},
+        {label: 'sejm-stats', value: 'procesy'},
+    ]
+}>
+
+<TabItem value="procesy">
+
+![procesy](img/procesy.png)
+
+</TabItem>
+
+<TabItem value="procesy_sejm">
+
+![procesy_sejm](img/procesy_sejm.png)
+
+</TabItem>
+
+
+
+</Tabs>
+
+### Lista posłów
+
+<Tabs
+    defaultValue="poslowie"
+    values={[
+        {label: 'sejm.gov.pl', value: 'poslowie_sejm'},
+        {label: 'sejm-stats', value: 'poslowie'},
+    ]
+}>
+
+<TabItem value="poslowie">
+
+![poslowie](img/poslowie.png)
+
+</TabItem>
+
+<TabItem value="poslowie_sejm">
+
+![poslowie_sejm](img/poslowie_sejm.png)
+
+</TabItem>
+
+
+
+</Tabs>
