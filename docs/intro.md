@@ -8,7 +8,13 @@ Witamy w Sejm 2.0 – nowoczesnej aplikacji zaprojektowanej z myślą o transpar
 
 ---
 
-![light](./img/light_mode.png)
-![dark](./img/dark_mode.png)
-![poslowie](./img/poslowie.png)
-![poslowie sejm](./img/poslowie_sejm.png)
+![Alt text](img/sejm_tytulowa.png)    
+
+![Alt text](img/tytulowa.png) 
+
+![Alt text](img/poslowie_zest.png) 
+
+![Alt text](img/procesy_sejm.png) 
+
+![Alt text](img/procesy.png) 
+
