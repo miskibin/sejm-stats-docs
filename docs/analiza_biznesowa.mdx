@@ -9,7 +9,9 @@ sidebar_position: 2
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
----
+
+
+Aby lepiej zrozumieć, dlaczego zdecydowałem się na zinicjowanie projektu, poniżej przedstawiam kilka przykładów zastosowań sejm-stats.
 
 <Tabs
     defaultValue="poslowie"
@@ -62,17 +64,26 @@ Przedsiębiorca D, właściciel firmy farmaceutycznej, potrzebuje bieżących in
 
 ---
 
-## 3. Główne Funkcje i Korzyści
-Sejm 2.0 wyróżnia się na tle innych aplikacji dzięki:
+## 3. Stos technologiczny
 
-- **Szybkości i Niezawodności:**  
-Dzięki wykorzystaniu technologii Elastic Search, oferujemy użytkownikom szybkie i dokładne wyszukiwanie danych.
+Każdy kto odwiedził oficjalną stronę sejmową wie, że przy jej projektowaniu coś poszło nie tak... Aby nie popełnić błędu ekipy z sejmu, przed rozpoczęciem pracy nad projektem, przeprowadziłem analizę technologiczną, aby wybrać odpowiednie narzędzia i technologie, które pozwolą na szybki rozwój aplikacji i łatwą skalowalność w przyszłości.
 
-- **Przejrzystości Danych:**  
-Nasza aplikacja prezentuje dane w sposób uporządkowany i łatwy do analizy.
+:::important uwaga
+W gotowym prototypie aplikacji niektóre z wymienionych technologii nie zostały jeszcze zaimplementowane.
+:::
 
-- **Nowoczesności Interfejsu:**  
-Korzystając z najnowszych rozwiązań w zakresie UX/UI, zapewniamy płynne i intuicyjne doświadczenie użytkownika.
+![stos](img/aws.png)
+
+Szególnie istotny jest tutaj wybór `elasticsearch`, który pozawala na szybkie wyszukiwanie z użyciem uczenia maszynowego i analizy języka naturalnego. Dzięki temu, użytkownicy mogą szybko znaleźć interesujące ich informacje, a my możemy dostarczać spersonalizowane rekomendacje.
+
+
+Poza technologiami przedstawionymi na wykresie do projektu użyte zostaną usługi `AWS` w tym:
+
+- AWS EC2 - serwer wirtualny, na którym będzie uruchomiona aplikacja
+- AWS RDS - baza danych, w której przechowywane będą dane sejmowe
+- AWS OpenSearch - wyszukiwarka, która umożliwi szybkie wyszukiwanie danych
+- AWS bedrock - model językowy (LLM), który pozwoli na streszczenie tekstów (ustaw, interpelacji, wypowiedzi, itp.) w sposób inteligentny i zrozumiały dla użytkownika 
+
 
 ---
 
