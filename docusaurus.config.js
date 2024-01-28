@@ -52,7 +52,7 @@ const config = {
           type: "doc",
           docId: "intro",
           position: "left",
-          label: "Opracowanie",
+          label: "O projekcie",
         },
         {
           href: "https://github.com/ymichalskibinski109/sejm-stats",

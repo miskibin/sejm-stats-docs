@@ -2,20 +2,65 @@
 sidebar_position: 2
 ---
 
-# 2. Przeznaczenie projektu
+# Analiza biznesowa
+
+## 2. Przeznaczenie projektu
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 ---
 
-**Dla Posłów i Biur Poselskich:**  
+<Tabs
+    defaultValue="poslowie"
+    values={[
+        {label: 'Dla Posłów i Biur Poselskich', value: 'poslowie'},
+        {label: 'Dla osób szczególnie interesujących polityką', value: 'polityka'},
+        {label: 'Dla Przedsiębiorców', value: 'przedsiebiorcy'},
+    ]
+}>
+
+<TabItem value="poslowie">
+
+#### Przypadek użycia:
+
 Ułatwienie dostępu do danych na temat działalności posłów, analizy trendów i zachowań politycznych, które są kluczowe dla wewnętrznych strategii politycznych i legislacyjnych.
 
-**Dla osób szczególnie interesujących polityką:**  
+#### Scenariusz:
+
+*Poseł A* chce ocenić, jak często *Poseł B* angażuje się w debaty i głosowania dotyczące polityki ekologicznej. Używając Sejm 2.0, szybko uzyskuje przekrojową analizę udziału Posła B w dyskusjach, jego głosowania i proponowane projekty ustaw, co pozwala na strategię wewnętrzną swojego ugrupowania przed nadchodzącymi wyborami.
+
+</TabItem>
+
+
+<TabItem value="polityka">
+
+#### Przypadek użycia:
+
 Zwiększenie świadomości obywateli na temat działań sejmowych i pomaganie w informowanym wyborze przedstawicieli na podstawie ich aktywności parlamentarnej i głosowań.
 
-**Dla Przedsiębiorców:**  
+#### Scenariusz:
+
+ *Obywatelka C* interesuje się działaniami posłów na temat praw kobiet. Przed wyborami parlamentarnymi korzysta z Sejm-stats, aby sprawdzić historię głosowań posłów, ich wypowiedzi i inicjatywy związane z tą tematyką, co pomaga jej podjąć świadomą decyzję wyborczą.
+
+</TabItem>
+
+<TabItem value="przedsiebiorcy">
+
+#### Przypadek użycia:
+
 Zapewnienie aktualnych informacji o zmieniającym się prawodawstwie, co pozwala na lepsze planowanie biznesowe i adaptację do nowych regulacji prawnych.
 
+#### Scenariusz:
 
+
+Przedsiębiorca D, właściciel firmy farmaceutycznej, potrzebuje bieżących informacji o zmianach w przepisach dotyczących reklamy leków. Wykorzystuje Sejm 2.0 do otrzymywania powiadomień o nowych projektach ustaw, głosowaniach i uchwałach, co pozwala na szybką adaptację strategii marketingowej firmy do aktualnego stanu prawnego.
+
+</TabItem>
+
+</Tabs>
+
+---
 
 ## 3. Główne Funkcje i Korzyści
 Sejm 2.0 wyróżnia się na tle innych aplikacji dzięki:
@@ -62,20 +107,24 @@ W dłuższej perspektywie, planujemy wprowadzenie modelu freemium z opcjami subs
 
 ## 6. Kosztorys i Finansowanie
 
-::: danger 
+:::danger 
+
 Dane w tabeli są szacunkowe i mogą ulec zmianie w zależności od rozwoju projektu.
+
 :::
 
 
-| Pozycja         | Koszt (PLN)              | Uzasadnienie                                                                                                        |
-| --------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------- |
-| Domena          | 50 - 100                 | Opłata za roczną rejestrację nazwy domeny, podstawowa inwestycja umożliwiająca identyfikację projektu w internecie. |
-| AWS Services    | [Szacunkowy Koszt]       | Pokrycie kosztów hostingu, przechowywania danych i operacji obliczeniowych na potrzeby aplikacji.                   |
-| MDBootstrap Pro | 500 (opcjonalnie)        | Zakup licencji na premium komponenty UI, które ulepszają estetykę oraz UX aplikacji.                                |
-| GitHub Copilot  | 50/miesiąc (opcjonalnie) | Subskrypcja narzędzia wspierającego szybsze i efektywniejsze pisanie kodu.                                          |
+| Pozycja         | Koszt (PLN)              | Uzasadnienie                                                                                                          |
+| --------------- | ------------------------ | --------------------------------------------------------------------------------------------------------------------- |
+| Domena          | 50 - 100                 | Opłata za roczną rejestrację nazwy domeny, podstawowa inwestycja umożliwiająca identyfikację projektu w internecie.   |
+| AWS Services    | < 200/miesiąc            | Pokrycie kosztów hostingu, przechowywania danych i operacji LLM na potrzeby  aplikacji (ec2, OpenSearch, s3, bedrock) |
+| MDBootstrap Pro | 500 (opcjonalnie)        | Zakup licencji na premium komponenty UI, które ulepszają estetykę oraz UX aplikacji.                                  |
+| GitHub Copilot  | 50/miesiąc (opcjonalnie) | Subskrypcja narzędzia wspierającego szybsze i efektywniejsze pisanie kodu.                                            |
 
 
 ---
+
+
 
 ## 7. Źródła Czerpania Korzyści
 - **Narzędzie do Badań i Edukacji:**  
