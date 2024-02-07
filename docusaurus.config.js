@@ -55,7 +55,7 @@ const config = {
           label: "O projekcie",
         },
         {
-          href: "https://github.com/ymichalskibinski109/sejm-stats",
+          href: "https://github.com/michalskibinski109/sejm-stats",
           label: "GitHub",
           position: "right",
         },
