@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import Heading from "@theme/Heading";
 import styles from "./styles.module.css";
-import ReactPlayer from "react-player";
 
 const FeatureList = [
   {
