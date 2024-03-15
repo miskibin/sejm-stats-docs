@@ -6,9 +6,9 @@ import Features from "@site/src/components/HomepageFeatures";
 import logo from "@site/static/img/logo.png";
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
-import LiteYouTubeEmbed from 'react-lite-youtube-embed';
-import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import LiteYouTubeEmbed from "react-lite-youtube-embed";
+import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -27,13 +27,24 @@ function HomepageHeader() {
             <div className={styles.buttons}>
               <Link
                 className={clsx(
-                  "button button--secondary button--lg",
+                  "button button--secondary button--lg margin-right--md",
                   styles.heroButton
                 )}
                 to="/docs/intro"
               >
                 O projekcie
               </Link>
+              <a
+                className={clsx(
+                  "button  button--warning button--lg margin-left--md text--secondary",
+                  styles.heroButton
+                )}
+                href="https://github.com/michalskibinski109/sejm-stats"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
             </div>
           </div>
         </div>
@@ -47,10 +58,11 @@ function VideoContainer() {
     <div className="container text--center margin-top--xl">
       <div className="row">
         <div className="col">
-          <Heading as="h2">
-            Obejrzyj wprowadzenie do aplikacji
-          </Heading>
-          <div className="video-container" style={{ maxWidth: '50%', margin: '0 auto' }}>
+          <Heading as="h2">Obejrzyj wprowadzenie do aplikacji</Heading>
+          <div
+            className="video-container"
+            style={{ maxWidth: "50%", margin: "0 auto" }}
+          >
             <LiteYouTubeEmbed
               id="YPKBta1VSA0"
               params="autoplay=1&autohide=1&showinfo=0&rel=0"
@@ -65,12 +77,9 @@ function VideoContainer() {
   );
 }
 
-function Feature({
-  feature,
-  className,
-}) {
+function Feature({ feature, className }) {
   return (
-    <div className={clsx('col', className)}>
+    <div className={clsx("col", className)}>
       <img
         className={styles.featureImage}
         alt={feature.title}
@@ -86,7 +95,6 @@ function Feature({
     </div>
   );
 }
-
 
 function FeaturesContainer() {
   const firstRow = Features.slice(0, 3);
@@ -104,14 +112,13 @@ function FeaturesContainer() {
           <Feature
             feature={feature}
             key={idx}
-            className={clsx('col--4', idx === 0 && 'col--offset-2')}
+            className={clsx("col--4", idx === 0 && "col--offset-2")}
           />
         ))}
       </div>
     </div>
   );
 }
-
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
