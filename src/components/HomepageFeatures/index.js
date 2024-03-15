@@ -34,7 +34,7 @@ const FEATURES = [
   {
     title: "Wizualizacje i statystyki",
     image: {
-      src: '/img/chart-sample-solid.svg',
+      src: '/img/chart-simple-solid.svg',
       width: 1137,
       height: 776.59,
     },
