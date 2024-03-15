@@ -1,64 +1,78 @@
-import clsx from "clsx";
-import Heading from "@theme/Heading";
-import styles from "./styles.module.css";
+import React from 'react';
+import Translate, { translate } from '@docusaurus/Translate';
 
-const FeatureList = [
+
+const FEATURES = [
   {
-    title: "Łatwość Użytkowania",
-    Svg: require("@site/static/img/user-group-solid.svg").default,
-    description: (
+    title: "Wsparcie dla społeczności",
+    image: {
+      src: '/img/community.svg',
+      width: 1009.54,
+      height: 717.96,
+    },
+    text: (
       <>
-        Nasza aplikacja została zaprojektowana tak, aby łatwo i szybko
-        dostarczać informacje o działalności sejmowej.
+        Dołącz do rosnącej społeczności Sejm Stats i weź udział w
+        wspólnym tworzeniu transparentnej i otwartej platformy.
       </>
     ),
   },
   {
-    title: "Skupienie na Danych",
-    Svg: require("@site/static/img/database-solid.svg").default,
-    description: (
+    title: "Analityka i uczenie maszynowe",
+    image: {
+      src: '/img/robot-solid.svg',
+      width: 1108,
+      height: 731.18,
+    },
+    text: (
       <>
-        Sejm Stats pozwala na skoncentrowanie się na najważniejszych danych,
-        dzięki zaawansowanym filtrom i wyszukiwaniu.
+        Skorzystaj z narzędzi analitycznych i modeli uczenia maszynowego,
+        aby odkrywać nowe wzorce i anomalie w sejmowych działaniach.
       </>
     ),
   },
   {
-    title: "Aktualizacje w Czasie Rzeczywistym",
-    Svg: require("@site/static/img/rotate-solid.svg").default,
-    description: (
+    title: "Wizualizacje i statystyki",
+    image: {
+      src: '/img/chart-sample-solid.svg',
+      width: 1137,
+      height: 776.59,
+    },
+    text: (
       <>
-        Oferujemy aktualizacje na żywo, abyś zawsze był na bieżąco z ostatnimi
-        zmianami w sejmie.
+        Odkryj trendy i zależności w danych sejmowych dzięki
+        interaktywnym wizualizacjom i szczegółowym statystykom.
+      </>
+    ),
+  },
+  {
+    title: "Odkryj moc danych sejmowych",
+    image: {
+      src: '/img/database-solid.svg',
+      width: 1038.23,
+      height: 693.31,
+    },
+    text: (
+      <>
+        Sejm Stats udostępnia bogaty zbiór danych o działalności sejmu w
+        przystępnej i łatwej do analizy formie.
+      </>
+    ),
+  },
+  {
+    title: "Intuicyjne wyszukiwanie i filtrowanie",
+    image: {
+      src: '/img/rotate-solid.svg',
+      width: 1137.97,
+      height: 736.21,
+    },
+    text: (
+      <>
+        Znajdź interesujące Cię informacje błyskawicznie, korzystając z
+        zaawansowanego silnika wyszukiwania i precyzyjnych filtrów.
       </>
     ),
   },
 ];
 
-function Feature({ Svg, title, description }) {
-  return (
-    <div className={clsx("col col--4")}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
-    </div>
-  );
-}
-
-export default function HomepageFeatures() {
-  return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
+export default FEATURES;
