@@ -52,18 +52,17 @@ function HomepageHeader() {
     </header>
   );
 }
-
 function VideoContainer({ videoId, videoTitle, videoPoster, description }) {
   return (
     <div className="container text--center margin-top--xl">
-      <div style={{ display: 'flex', flexDirection: 'row' }}>
-        <div style={{ flex: 1, paddingRight: '10px' }}>
+      <div className="row">
+        <div className="col col--6">
           <Heading as="h2">
             {videoTitle}
           </Heading>
           <p>{description}</p>
         </div>
-        <div style={{ flex: 1, paddingLeft: '10px' }}>
+        <div className="col col--6">
           <div className="video-container">
             <LiteYouTubeEmbed
               id={videoId}
