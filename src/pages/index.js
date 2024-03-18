@@ -57,9 +57,7 @@ function VideoContainer({ videoId, videoTitle, videoPoster, description }) {
     <div className="container text--center margin-top--xl">
       <div className="row">
         <div className="col col--6">
-          <Heading as="h2">
-            {videoTitle}
-          </Heading>
+          <Heading as="h2">{videoTitle}</Heading>
           <p>{description}</p>
         </div>
         <div className="col col--6">
@@ -135,7 +133,7 @@ export default function Home() {
           <VideoContainer
             videoId="rljMODq5Ess"
             videoTitle="Co może aplikacja którą buduję od pół roku?"
-            videoPoster="maxresdefault"
+            videoPoster="hqdefault"
             description="
             W filmie zostały przedstawione główne funkcjonalności aplikacji,
              takie jak przeglądanie listy posłów, śledzenie ich aktywności,
