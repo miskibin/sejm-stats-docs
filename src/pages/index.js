@@ -42,20 +42,23 @@ function HomepageHeader() {
   );
 }
 
-function VideoContainer() {
+function VideoContainer({ videoId, videoTitle, videoPoster, description }) {
   return (
     <div className="container text--center margin-top--xl">
-      <div className="row">
-        <div className="col">
+      <div style={{ display: 'flex', flexDirection: 'row' }}>
+        <div style={{ flex: 1, paddingRight: '10px' }}>
           <Heading as="h2">
-            Obejrzyj wprowadzenie do aplikacji
+            {videoTitle}
           </Heading>
-          <div className="video-container" style={{ maxWidth: '50%', margin: '0 auto' }}>
+          <p>{description}</p>
+        </div>
+        <div style={{ flex: 1, paddingLeft: '10px' }}>
+          <div className="video-container">
             <LiteYouTubeEmbed
-              id="YPKBta1VSA0"
+              id={videoId}
               params="autoplay=1&autohide=1&showinfo=0&rel=0"
-              title="Naprawiłem stronę sejmu! devlog 1"
-              poster="maxresdefault"
+              title={videoTitle}
+              poster={videoPoster}
               webp
             />
           </div>
@@ -124,7 +127,29 @@ export default function Home() {
       <main>
         <div className={styles.section}>
           <FeaturesContainer />
-          <VideoContainer />
+          <VideoContainer
+            videoId="rljMODq5Ess"
+            videoTitle="Co może aplikacja którą buduję od pół roku?"
+            videoPoster="maxresdefault"
+            description="
+            W filmie zostały przedstawione główne funkcjonalności aplikacji,
+             takie jak przeglądanie listy posłów, śledzenie ich aktywności,
+              a także eksperymentalne elementy, takie jak sekcja dotycząca afer rządowych. 
+              Dodatkowo omówione zostały plany rozwoju projektu, w tym możliwość hostowania
+              na AWS-ie oraz zaproszenie do współtworzenia i dzielenia się pomysłami."
+          />
+          <VideoContainer
+            videoId="YPKBta1VSA0"
+            videoTitle="Naprawiłem stronę sejmu! devlog 1"
+            videoPoster="maxresdefault"
+            description="
+            W filmie opowiadam o mojej motywacji do stworzenia strony internetowej, 
+            która ma pomóc obywatelom lepiej zrozumieć pracę parlamentarzystów.
+             Przedstawiam główne funkcje projektu, takie jak inteligentna wyszukiwarka 
+             aktów prawnych i możliwość sprawdzenia aktywności posłów. Omawiam także 
+             techniczne wyzwania związane z agregacją danych głosowań parlamentarnych oraz
+              aktualny stan projektu, zachęcając do zaangażowania społeczności w jego rozwój."
+          />
         </div>
       </main>
     </Layout>
