@@ -8,8 +8,8 @@ const config = {
   favicon: "img/logo.png",
 
   // Set your production url here
-  url: "https://sejm-stats.example.com",
-  baseUrl: "/sejm-stats-docs/",
+  url: "https://sejm-stats.com",
+  baseUrl: "/",
 
   // Update these with your own GitHub org/user and repo name if you plan to use GH Pages
   organizationName: "michalskibinski109", // Replace `ymichalskibinski109` with your GitHub username.
