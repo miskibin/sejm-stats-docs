@@ -22,29 +22,29 @@ function HomepageHeader() {
               Sejm Stats{" "}
             </Heading>
             <p className="hero__subtitle">
-              Dane, statystyki i analizy sejmowe w zasięgu ręki
+              Tu będzie aplikacja gdy uda się zebrać środki
             </p>
             <div className={styles.buttons}>
               <Link
                 className={clsx(
-                  "button button--secondary button--lg margin-right--md",
+                  "button button--warning button--lg margin-right--md",
                   styles.heroButton
                 )}
                 to="/docs/intro"
               >
                 O projekcie
               </Link>
-              <a
+              <Link
                 className={clsx(
-                  "button  button--warning button--lg margin-left--md text--secondary",
+                  "button button--secondary button--lg",
                   styles.heroButton
                 )}
-                href="https://github.com/michalskibinski109/sejm-stats"
+                to="https://patronite.pl/sejm-stats"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Github
-              </a>
+                Patronite
+              </Link>
             </div>
           </div>
         </div>
@@ -52,6 +52,7 @@ function HomepageHeader() {
     </header>
   );
 }
+
 function VideoContainer({ videoId, videoTitle, videoPoster, description }) {
   return (
     <div className="container text--center margin-top--xl">
@@ -130,6 +131,19 @@ export default function Home() {
       <main>
         <div className={styles.section}>
           <FeaturesContainer />
+          <VideoContainer
+            videoId="5PVSQD4JcNo"
+            videoTitle="Tworzę aplikację dla każdego Obywatela! devlog2"
+            videoPoster="hqdefault" // Use the appropriate thumbnail for the video
+            description="
+    Drugi devlog projektu Sejm Stats ukazuje intensywne dwa tygodnie pracy nad aplikacją. 
+    Prezentuje udoskonalenia takie jak nowa grafika, funkcjonalność interpelacji oraz 
+    obsługi komisji sejmowych. Twórca podkreśla przełom w zarządzaniu danymi, 
+    umożliwiający ich asynchroniczną aktualizację i omawia wyzwania technologiczne napotkane 
+    w trakcie integracji danych. Film kończy się zachętą do wsparcia przez Patronite 
+    i planami rozwoju społeczności wokół aplikacji."
+          />
+
           <VideoContainer
             videoId="rljMODq5Ess"
             videoTitle="Co może aplikacja którą buduję od pół roku?"
