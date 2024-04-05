@@ -8,7 +8,7 @@ const config = {
   favicon: "img/logo.png",
 
   // Set your production url here
-  url: "https://sejm-stats.com",
+  url: "https://docs.sejm-stats.pl",
   baseUrl: "/",
 
   // Update these with your own GitHub org/user and repo name if you plan to use GH Pages
