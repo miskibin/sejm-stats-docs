@@ -17,18 +17,18 @@ function HomepageHeader() {
       <div className="container">
         <div className="row">
           <div className={clsx("col col--12", styles.heroText)}>
-            <Heading as="h1" className={clsx("hero__title", styles.center)}>
+            <Heading as="h1" className={clsx("hero__title", styles.title, styles.center)}>
               <img src={logo} className={styles.logo} alt="Sejm Stats" />
               Sejm Stats{" "}
             </Heading>
             <p className="hero__subtitle">
-              Tu będzie aplikacja gdy uda się zebrać środki
+              Dokumentacja projektu Sejm Stats - transparentność danych sejmowych
             </p>
             <div className={styles.buttons}>
               <Link
                 className={clsx(
-                  "button button--warning button--lg margin-right--md",
-                  styles.heroButton
+                  "button button--outline button--secondary  button--lg margin-right--md",
+                  styles.getStarted
                 )}
                 to="/docs/intro"
               >
@@ -36,8 +36,8 @@ function HomepageHeader() {
               </Link>
               <Link
                 className={clsx(
-                  "button button--secondary button--lg",
-                  styles.heroButton
+                  "button button--outline button--secondary  button--lg",
+                  styles.getStarted
                 )}
                 to="https://patronite.pl/sejm-stats"
                 target="_blank"
@@ -130,7 +130,6 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <div className={styles.section}>
-          <FeaturesContainer />
           <VideoContainer
             videoId="5PVSQD4JcNo"
             videoTitle="Tworzę aplikację dla każdego Obywatela! devlog2"
