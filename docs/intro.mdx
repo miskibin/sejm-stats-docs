@@ -1,0 +1,219 @@
+---
+sidebar_position: 1
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+# Wstęp 🚀
+
+
+## Motywacja
+
+Każdy kto miał przyjemność korzystać z oficjalnej strony sejmowej, napewno doznał uczucia cofnięcia się w czasie do lat 90. Nieintuicyjny interfejs użytkownika, niespójna estetyka strony, brak możliwości wyszukiwania po słowach kluczowych to tylko niektóre z problemów, z którymi musieliśmy się zmierzyć.
+Dlatego zdecydowałem się zacząć projekt **`sejm-stats`**, który ma naprawić te problemy i rozszerzyć funkcjonalność o dodatkowe funkcjonalności.
+
+
+## Dlaczego to robię?
+
+Projekt **`sejm-stats`** to moja inicjatywa na rzecz lepszej dostępności informacji sejmowych dla wszystkich. Nie kieruję się motywami finansowymi, a przede wszystkim pragnieniem, by każdy wiedział co dzieje się w kraju. Nie jestem związany z żadną partią polityczną – moim celem jest obiektywne i wygodne dostarczanie informacji, aby ułatwić obywatelom zrozumienie procesów decyzyjnych w naszym kraju. Jednak w miarę rozwoju projektu zdałem sobie sprawę, że aby móc utrzymać projekt w dalszym ciągu, muszę znaleźć sposób na jego finansowanie. 
+
+
+
+---
+
+## Przewaga nad oficjalną stroną sejmową
+
+Zapraszamy do odkrywania naszej strony, która nie tylko gromadzi wszystkie informacje dostępne na oficjalnej stronie sejmowej, ale także oferuje wiele więcej!
+
+#### Posłowie
+- Poznaj  posłów! Znajdziesz tu podstawowe informacje, adresy e-mail, wyniki wyborcze, wykształcenie i profesję. 🧑‍🎓
+- Lista projektów ustaw, uchwał i wniosków, w których dany poseł uczestniczył. 📜
+- Przeczytaj artykuły związane z danym posłem. 📰
+- Sprawdź statystyki dotyczące aktywności posła, liczba interpelacji, projektów ustaw, głosowań. 📊
+- Dowiedz się, jak głosują posłowie względem reszty klubu parlamentarnego. 🗳️
+- Filtruj posłów według aktywności, okręgu wyborczego, klubu. 🧐
+- Subskrybuj wszelką aktywność związaną z danym posłem. 📧
+- (w przygotowaniu)  dane dotyczące majątku posła. 💰
+- (w przygotowaniu) moedele AI wykrywające anomalie i nieprawidłowości w działaniach posłów 🤖
+
+#### Aktywność sejmowa
+- Wykorzystaj zaawansowany silnik wyszukiwania przeszukujący akty prawne, projekty ustaw/uchwał, wnioski, interpelacje. 🧐
+- Analizuj statystyki i wizualizacje dotyczące wyników wyszukiwania: zainteresowanie w ujęciu czasowym, najaktywniejsi posłowie, kluby, etc. 📊
+
+#### Kluby
+- Przejrzyj listę zgłoszonych projektów ustaw, uchwał, wniosków przez poszczególne kluby. TBD
+
+#### Pozostałe dane sejmowe
+- Śledź procesy legislacyjne, wraz z ich etapami. 📈
+- Subskrybuj dany proces legislacyjny. 📧
+- Odfiltruj tylko nie zakończone procesy (stan zamrażarki sejmowej). 🧊
+- Przejrzyj listę aktów prawnych z możliwością inteligentnego filtrowania i wyszukiwania. 📜
+- Sprawdź listę głosowań wraz z wynikami. 🗳️
+- W każdym z widoków znajdziesz linki do oficjalnych dokumentów sejmowych. 📎
+- (w przygotowaniu) Skorzystaj z inteligentnych streszczeń uchwał, ustaw, projektów ustaw itp. z wykorzystaniem modeli sztucznej inteligencji (NLP) 📝
+- Odkryj wizualizacje danych zintegrowane z aplikacją 📊
+
+#### Artykuły
+
+- Przeczytaj artykuły pisane przez dziennikarzy i sztuczną inteligencję (weryfikowane przez klasyfikatory tematyczne).
+- Każdy artykuł jest powiązany z klubem parlamentarnym oraz posłami. 📰
+- (w przygotowaniu) Artykuły są łatwe do napisania dla osób nietechnicznych, dzięki wbudowanemu edytorowi Markdown. 📝
+- (w przygotowaniu) Komentuj artykuły i zapisuj je do późniejszego czytania. 💬
+- Przejrzyj listę afer rządowych (weryfikowane przez klasyfikatory tematyczne). Afery powiązane z posłami, klubami parlamentarnymi, procesami legislacyjnymi. 🕵️
+- (w przygotowaniu) Komentuj i oceniaj artykuły. 💬
+- (w przygotowaniu) Eksportuj dane do plików CSV, JSON, XML  w celu dalszej analizy 📁
+- Ciesz się intuicyjnym interfejsem użytkownika oferującym motyw jasny i ciemny ☀️
+
+
+## Zestawenie interfejsów
+
+:::important Uwaga
+
+Widoczne poniżej zrzuty ekranu pochodzą z POC (dowodu koncepcji) projektu. Finalna wersja może się różnić.
+
+:::
+
+<Tabs
+    defaultValue="light"
+    values={[
+        {label: 'oficjalna strona sejmu', value: 'gov'},
+        {label: 'sejm-stats motyw jasny', value: 'light'},
+        {label: 'sejm-stats motyw ciemny', value: 'dark'},
+    ]}>
+
+<TabItem value="gov">
+
+![sejm_tytulowa](img/sejm_tytulowa.png)    
+
+</TabItem>
+
+<TabItem value="light">
+
+![Alt text](img/light_mode.png)
+
+</TabItem>
+
+<TabItem value="dark">
+
+![Alt text](img/dark_mode.png)
+
+</TabItem>
+
+</Tabs>
+
+### Lista aktów prawnych
+
+<Tabs
+    defaultValue="procesy_sejm"
+    values={[
+        {label: 'sejm.gov.pl', value: 'procesy_sejm'},
+        {label: 'sejm-stats', value: 'procesy'},
+    ]
+}>
+
+<TabItem value="procesy">
+
+![procesy](img/procesy.png)
+
+</TabItem>
+
+<TabItem value="procesy_sejm">
+
+![procesy_sejm](img/procesy_sejm.png)
+
+</TabItem>
+
+
+
+</Tabs>
+
+### Lista posłów
+
+<Tabs
+    defaultValue="poslowie"
+    values={[
+        {label: 'sejm.gov.pl', value: 'poslowie_sejm'},
+        {label: 'sejm-stats', value: 'poslowie'},
+    ]
+}>
+
+<TabItem value="poslowie">
+
+![poslowie](img/poslowie.png)
+
+</TabItem>
+
+<TabItem value="poslowie_sejm">
+
+![poslowie_sejm](img/poslowie_sejm.png)
+
+</TabItem>
+
+
+
+</Tabs>
+
+
+<Tabs
+    defaultValue="posel"
+    values={[
+        {label: 'Widok szczegółowy 1', value: 'posel'},
+        {label: 'Widok szczegółowy 2', value: 'posel2'},
+    ]
+}>
+
+<TabItem value="posel">
+
+![poslowie](img/posel.png)
+
+</TabItem>
+
+<TabItem value="posel2">
+
+![poslowie_sejm](img/posel2.png)
+
+</TabItem>
+
+
+
+</Tabs>
+
+### Zaawansowane wyszukiwanie
+
+:::important Uwaga
+
+Aktualnie trwa jeszcze używana jest baza danych do prototypowania, dlatego dane są niekompletne.
+
+:::
+
+<Tabs
+    defaultValue="search"
+    values={[
+        {label: 'widok 1', value: 'search'},
+        {label: 'widok 2', value: 'search2'},
+        {label: 'widok 2', value: 'search3'},
+    ]
+}>
+
+
+
+<TabItem value="search">
+
+![poslowie](img/search.png)
+
+</TabItem>
+
+<TabItem value="search2">
+
+![poslowie_sejm](img/search2.png)
+
+</TabItem>
+<TabItem value="search3">
+
+![poslowie_sejm](img/search3.png)
+
+</TabItem>
+
+</Tabs>
+
