@@ -18,12 +18,12 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--secondary button--lg margin--md"
             to="/docs/intro">
             Czytaj dokumentację ⏱️
           </Link>
           <Link
-            className="button button--danger button--lg margin-left--md"
+            className="button button--danger button--lg margin--md"
             to="https://sejm-stats.pl">
             Zacznij korzystać 🚀
           </Link>
